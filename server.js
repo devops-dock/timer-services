@@ -25,7 +25,6 @@ app.post('/user-tasks', async (req, res) => {
         userData: req.body.userData,
         userTasks: [{
             date: req.body.date,
-            time: req.body.time,
             isFinished: req.body.isFinished,
             tasks: [...req.body.userTasks]
         }]
