@@ -47,7 +47,6 @@ app.post('/user-tasks', async (req, res) => {
             const oldTask = existinguser.userTasks.map(t => t) // returns prev tasks
             const newTask = {
                 date: req.body.date,
-                time: req.body.time,
                 isFinished: req.body.isFinished,
                 tasks: req.body.userTasks
             }
